@@ -13,8 +13,8 @@ trix-toolbar {
 
   .button_row {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .button_group {
@@ -24,6 +24,7 @@ trix-toolbar {
     border-top-color: #ccc;
     border-bottom-color: #888;
     border-radius: 3px;
+    margin-right: 10px;
 
     button, input[type=button] {
       position: relative;
@@ -33,7 +34,6 @@ trix-toolbar {
       margin: 0;
       outline: none;
       border: none;
-      border-bottom: 1px solid #ddd;
       border-radius: 0;
       background: transparent;
 
@@ -50,10 +50,11 @@ trix-toolbar {
       }
 
       &.icon {
-        width: 2.6em;
+        width: 2em;
         height: 1.6em;
         max-width: calc(0.8em + 4vw);
         text-indent: -9999px;
+        margin: 0 auto;
 
         @include phone {
           height: 2em;
@@ -71,7 +72,7 @@ trix-toolbar {
           content: "";
           background-position: center;
           background-repeat: no-repeat;
-          background-size: contain;
+          background-size: initial;
 
           @include phone {
             right: 6%;

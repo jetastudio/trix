@@ -10,11 +10,6 @@ Trix.config.blockAttributes = attributes =
     terminal: true
     breakOnReturn: true
     group: false
-  code:
-    tagName: "pre"
-    terminal: true
-    text:
-      plaintext: true
   bulletList:
     tagName: "ul"
     parse: false
@@ -35,3 +30,9 @@ Trix.config.blockAttributes = attributes =
     nestable: true
     test: (element) ->
       Trix.tagName(element.parentNode) is attributes[@listAttribute].tagName
+  h1:
+    tagName: "h1"
+  h2:
+    tagName: "h2"
+  h3:
+    tagName: "h3"

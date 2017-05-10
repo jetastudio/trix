@@ -12,9 +12,10 @@ Trix.config.toolbar =
       </span>
 
       <span class="button_group block_tools">
-        <button type="button" class="icon heading-1" data-trix-attribute="heading1" title="#{lang.heading1}">#{lang.heading1}</button>
+        <button type="button" class="h1" data-trix-attribute="h1" title="#{lang.h1}">#{lang.h1}</button>
+        <button type="button" class="h2" data-trix-attribute="h2" title="#{lang.h2}">#{lang.h2}</button>
+        <button type="button" class="h3" data-trix-attribute="h3" title="#{lang.h2}">#{lang.h3}</button>
         <button type="button" class="icon quote" data-trix-attribute="quote" title="#{lang.quote}">#{lang.quote}</button>
-        <button type="button" class="icon code" data-trix-attribute="code" title="#{lang.code}">#{lang.code}</button>
         <button type="button" class="icon list bullets" data-trix-attribute="bullet" title="#{lang.bullets}">#{lang.bullets}</button>
         <button type="button" class="icon list numbers" data-trix-attribute="number" title="#{lang.numbers}">#{lang.numbers}</button>
         <button type="button" class="icon nesting-level decrease" data-trix-action="decreaseNestingLevel" title="#{lang.outdent}">#{lang.outdent}</button>
